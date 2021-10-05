@@ -132,6 +132,8 @@ RUNNING_TIME = args.times
 
 x_train, y_train, z_train, x_test, y_test, z_test = read_dataset(name=dataset_name, fold=1)
 n, d = x_train.shape
+print(f'x_train size = {x_train.shape}')
+print(f'x_all size = {x_train.shape[0] + x_test.shape[0]}')
 
 
 device_gpu = torch.device('cuda:{}'.format(GPU))

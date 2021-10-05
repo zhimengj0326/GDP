@@ -92,7 +92,7 @@ adj, features, labels, idx_train, idx_val, idx_test,sens,idx_sens_train = load_p
                                                                                     predict_attr,
                                                                                     path=path,
                                                                                     seed=seed,test_idx=test_idx)
-print(len(idx_test))
+print(f'features={features.shape}')
 #%%
 import dgl
 from utils import feature_norm
@@ -116,6 +116,8 @@ labels[labels>1]=1
 g = dgl.remove_self_loop(g)
 g = dgl.add_self_loop(g)
 n_edges = g.number_of_edges()
+
+print(f'n_edges={n_edges}')
 
 # model = FairGNN(nfeat = features.shape[1], args = args)
 # model.estimator.load_state_dict(torch.load("./checkpoint/GCN_sens_{}_ns_{}".format(dataset,sens_number)))
