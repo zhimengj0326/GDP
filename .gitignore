@@ -1,13 +1,13 @@
-./synthetic/kde_example.ipynb
-./synthetic/kde_gau2.ipynb
-./synthetic/kde_syn.ipynb
-./synthetic/kde_syn2.ipynb
-./synthetic/kde_syncopy.ipynb
-./synthetic/*.pdf
+synthetic/kde_example.ipynb
+synthetic/kde_gau2.ipynb
+synthetic/kde_syn.ipynb
+synthetic/kde_syn2.ipynb
+synthetic/kde_syncopy.ipynb
+synthetic/*.pdf
 
-./tabular/*.ipynb
-./graph/*.ipynb
-./comp/*.ipynb
-./Dgraph/*.ipynb
+tabular/*.ipynb
+graph/*.ipynb
+comp/*.ipynb
+Dgraph/*.ipynb
 .vscode
 .gitignore
